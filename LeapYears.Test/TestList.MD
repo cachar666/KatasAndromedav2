@@ -1,0 +1,5 @@
+- [x] Si year es 1996 retorna True.
+- [x] Si year es 2001 retorna False.
+- [x] Si year es 2000 retorna True.
+- [x] Si year es 1900 retorna False.
+- [x] Si year es 2025 retorna False.

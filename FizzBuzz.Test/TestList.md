@@ -1,0 +1,8 @@
+- [x] Si el numero es Uno Mostrar Uno
+- [x] Si el numero es Dos mostrar Dos
+- [x] Si el numero es tres mostrar Fizz
+- [x] Si el numero es cuatro mostrar cuatro
+- [x] Si el numero es cinco mostrar Buzz
+- [x] Si el numero es seis mostrar Fizz
+- [ ] Si el numero es diez mostrar Buzz
+- [x] Si el numero es quince mostrar FizzBuzz
