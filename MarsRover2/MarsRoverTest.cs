@@ -70,6 +70,7 @@ public class MarsRoverTest
 
 public class Rover
 {
+    private static readonly char[] OrdenBrujula = ['N','E','S','W'];
     private const int LimitePlataforma = 9;
     private const int InicioPlataforma = 0;
 
@@ -81,11 +82,12 @@ public class Rover
     
     public void Ejecutar(string comando)
     {
-        if (Girar(comando)) return;
-
-        foreach (var _ in comando.ToCharArray())
+        foreach (var instruccion in comando.ToCharArray())
         {
-            Avanzar();
+            if (instruccion == 'R')
+                Girar();
+            else
+                Avanzar();
         }
     }
 
@@ -97,26 +99,9 @@ public class Rover
             _coordenadaY++;
     }
 
-    private bool Girar(string comando)
+    private void Girar()
     {
-        if (comando == "R")
-        {
-            _direccionBrujula = 'E';
-            return true;
-        }
-        
-        if (comando == "RR")
-        {
-            _direccionBrujula = 'S';
-            return true;
-        }
-        
-        if (comando == "RRR")
-        {
-            _direccionBrujula = 'W';
-            return true;
-        }
-
-        return false;
+        int indiceOrientacion = Array.IndexOf(OrdenBrujula, _direccionBrujula);
+        _direccionBrujula = OrdenBrujula[indiceOrientacion + 1];
     }
 }

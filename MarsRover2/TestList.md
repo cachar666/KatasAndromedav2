@@ -5,8 +5,8 @@
 [x] Si_RoverEstaEnPosicion00NYAvanzaAlFinalDeLaPlataforma_DebeReiniciarSuPosicionYAvanzarElRestante
 [x] Si_RoverEstaOrientadoAlNorteYGiraALaDerecha_Debe_OrientarseAlOriente
 [x] Si_RoverEstaOrientadoAlNorteYGiraALaDerechaDosVeces_Debe_OrientarseAlSur
-[ ] Si_RoverEstaOrientadoAlNorteYGiraALaDerechaCuatroVeces_Debe_OrientarseAlNorte
-
+[x] Si_RoverEstaOrientadoAlNorteYGiraALaDerechaCuatroVeces_Debe_OrientarseAlNorte
+[ ] Si_RoverEstaEnOccidenteYGiraUnaVez_Debe_OrientarseAlNorte
 
 #DICCIONARIO
 Plataforma: Mapa donde se movera el rover
